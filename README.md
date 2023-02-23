@@ -1,12 +1,6 @@
-<p align = "center" draggable=”false” 
-   ><img src="https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png"
-     width="200px"
-     height="auto"/>
-</p>
 
 
-
-# <h1 align="center" id="heading">Week 2 - Deploying a Face Emotion Detector on AWS Lambda</h1>
+# <h1 align="center" id="heading">Deploying a Face Emotion Detector on AWS Lambda</h1>
 
 ## 🛍️ Overview
 Humans have always had the innate ability to recognize and distinguish between faces. Now computers are able to do the same. This opens up tons of applications. Face detection and Recognition can be used to improve access and security, allow payments to be processed without physical cards, enable criminal identification and allow personalized healthcare and other services. Face detection and recognition is a heavily researched topic and there are tons of resources online.
@@ -20,21 +14,6 @@ We then will utilize a pre-trained model and create the associated layers in a p
 We will then prepare [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) to work with AWS Lambda. You will build your application using SAM's `build` function. This will utilize [Docker](https://www.docker.com/) to prepare your application to be uploaded to the Elastic Container Registry (ECR). The ECR is a repository for Docker or other containers, which we will discuss more further in Week 4.
 
 After, we'll navigate to ECR on AWS to create our own private registry. We will then use SAM's `deploy` function to push our image to ECR and deploy our function on AWS Lambda. The resulting endpoint will be used to make an inference using Postman about our input image.
-
-
-## 📚 Learning Objectives
-
-By the end of this session, you will be able to:
-
-- Implement and utilize pre-trained models for your own project
-- Utilize Docker to build an Image of your application and  upload to ECR
-- Use the SAM CLI tool to work with AWS Lambda
-- Deploy your application on AWS Lambda to make predictions
-
-## 📦 Deliverables
-- Make the project public on your GitHub
-- Submit your repo link on Canvas
-- Submit a image prediction of your deployed model
 
 ## AWS Lambda
 ####  What is AWS Lambda?
